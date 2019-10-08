@@ -1,0 +1,20 @@
+mixin section-4(mixes)
+  include ./_imports/import
+
+  .section-4(class=(mixes) && `${mixes}__section-4`)
+    hr.section-4__line
+    .section-4__wrap
+
+      .section-4__content
+        h6.section-4__title 158 компаний пользуются <br> услугами AboutBrand
+        p.section-4__text Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение модели развития
+    
+      form.section-4__form
+        .section-4__form-group
+          input.section-4__input(type='tel' placeholder='Ваш номер телефона' require)
+
+        button.section-4__btn-submit(type='submit') Начать пробный период
+
+        span.section-4__input-alert.scale-out-alert Сообщение успешно отправлено, скоро мы с Вами свяжемся!
+
+

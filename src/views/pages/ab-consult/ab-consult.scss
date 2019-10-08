@@ -1,0 +1,40 @@
+#ab-consult-pg {
+  overflow: hidden;
+  color: $mainColor;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+// Mixes
+
+.ab-consult-pg__header {
+  margin-bottom: 100px;
+}
+
+.ab-consult-pg__section-2 {
+  position: relative;
+  z-index: 90;
+  margin: 0 auto 60px;
+}
+
+.ab-consult-pg__section-3 {
+  margin-bottom: 80px;
+}
+
+@include less-xl {
+}
+
+@include less-lg {
+  .ab-consult-pg__header {
+    margin-bottom: 44px;
+  }
+}
+
+@include less-md {
+  .ab-consult-pg__header {
+    margin-bottom: 50px;
+  }
+}
+
+@include less-sm {
+}

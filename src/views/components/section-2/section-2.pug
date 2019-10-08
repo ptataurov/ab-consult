@@ -1,0 +1,28 @@
+mixin section-2(mixes)
+  include ./_imports/import
+
+  .section-2(class=(mixes) && `${mixes}__section-2`)
+    img.section-2__bg-cloud(src=require('../../components/section-2/img/bg-cloud.svg') alt='Изображение облака')
+    .section-2__content
+      h3.section-2__title Ваша выгода
+      .section-2__items
+        - 
+          const items = [
+            {
+              img: require('../../components/section-2/img/item-1.svg'),
+              title: 'финансовое <br> преимущество',
+              text: 'Стоимость сервиса составляет 40 000 рублей в месяц. За 3 месяца пользования Вы сэкономите (заработаете) 120 000 рублей.'
+            },
+            {
+              img: require('../../components/section-2/img/item-2.svg'),
+              title: 'тактическое <br> преимущество',
+              text: 'Вы первыми в Вашей нише получите данные по представленности, популярности и репутации Вашего и конкурентных брендов.'
+            }
+          ]
+
+        each item in items
+          .section-2__item
+            img.section-2__item-img(src=`${item.img}` alt='Изображение')
+            h6.section-2__item-title!= item.title
+            p.section-2__item-text= item.text
+

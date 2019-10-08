@@ -1,0 +1,29 @@
+@include importFont('Montserrat', 800) {
+  src: url('../../public/fonts/ttf/Montserrat-ExtraBold.ttf') format('truetype'),
+    url('../../public/fonts/woff/Montserrat-ExtraBold.woff') format('woff'),
+    url('../../public/fonts/woff2/Montserrat-ExtraBold.woff2') format('woff2');
+}
+
+@include importFont('Montserrat', 600) {
+  src: url('../../public/fonts/ttf/Montserrat-SemiBold.ttf') format('truetype'),
+    url('../../public/fonts/woff/Montserrat-SemiBold.woff') format('woff'),
+    url('../../public/fonts/woff2/Montserrat-SemiBold.woff2') format('woff2');
+}
+
+@include importFont('Montserrat', 400) {
+  src: url('../../public/fonts/ttf/Montserrat-Regular.ttf') format('truetype'),
+    url('../../public/fonts/woff/Montserrat-Regular.woff') format('woff'),
+    url('../../public/fonts/woff2/Montserrat-Regular.woff2') format('woff2');
+}
+
+@include importFont('Montserrat', 300) {
+  src: url('../../public/fonts/ttf/Montserrat-Light.ttf') format('truetype'),
+    url('../../public/fonts/woff/Montserrat-Light.woff') format('woff'),
+    url('../../public/fonts/woff2/Montserrat-Light.woff2') format('woff2');
+}
+
+@include importFont('Iriska', 400) {
+  src: url('../../public/fonts/ttf/Iriska.ttf') format('truetype'),
+    url('../../public/fonts/woff/Iriska.woff') format('woff'),
+    url('../../public/fonts/woff2/Iriska.woff2') format('woff2');
+}

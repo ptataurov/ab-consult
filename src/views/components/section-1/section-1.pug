@@ -1,0 +1,26 @@
+mixin section-1(mixes)
+  include ./_imports/import
+
+  section.section-1(class=(mixes) && `${mixes}__section-1`)
+    h3.section-1__title Как мы видим наше <br> взаимовыгодное сотрудничество
+    .section-1__girl
+      .section-1__girl-wrap
+        img.section-1__girl-img(src=require('../../components/section-1/img/girl.svg') alt='Изображение девушки')
+        img.section-1__cloud-avatar-img(src=require('../../components/section-1/img/cloud-avatar.svg') alt='Изображение облака с аватаром')
+        img.section-1__arrow-right-img(src=require('../../components/section-1/img/arrow-right.svg') alt='Изображение стрелки')
+
+      .section-1__content
+        h6.section-1__content__title консультации по нише
+        p.section-1__content__text а именно: данные по площадкам, реальная картина соотношения сил игроков на рынке
+
+    .section-1__man
+      .section-1__man-wrap
+        img.section-1__man-img(src=require('../../components/section-1/img/man.svg') alt='Изображение мужчины')
+        img.section-1__cloud-logo-img(src=require('../../components/section-1/img/cloud-logo.svg') alt='Изображение облака с логотипом')
+        img.section-1__arrow-left-img(src=require('../../components/section-1/img/arrow-left.svg') alt='Изображение стрелки')
+
+      .section-1__content
+        h6.section-1__content__title 3 месяца
+        p.section-1__content__text бесплатного пользования сервисом с неограниченным доступом
+
+    img.section-1__mini-chart-img(src=require('../../components/section-1/img/mini-chart.svg') alt='Изображение мини графика')

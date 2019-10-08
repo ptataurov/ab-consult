@@ -1,0 +1,29 @@
+mixin modal-feedback(mixes)
+  include ./_imports/import
+
+  .modal-feedback.fade-out(class=(mixes) && `${mixes}__modal-feedback`)
+    button.modal-feedback__btn-close
+      span.modal-feedback__icon-close
+
+    form.modal-feedback__form
+      h6.modal-feedback__title Оставить заявку
+
+      .modal-feedback__form-body
+      
+        .modal-feedback__form-group
+          label.modal-feedback__label(for='name') Имя
+          input.modal-feedback__input(id='name' type='text' placeholder='Ваше имя' require)
+
+        .modal-feedback__form-group
+          label.modal-feedback__label(for='phone') Телефон
+          input.modal-feedback__input(id='phone' type='tel' placeholder='Ваше номер телефона' require)
+
+        .modal-feedback__form-group
+          label.modal-feedback__label(for='company') Название компании
+          input.modal-feedback__input(id='company' type='text' placeholder='Название компании' require)
+
+      .modal-feedback__btn-submit-group
+        button.modal-feedback__btn-submit(type='submit') Отправить
+
+        .modal-feedback__alert
+          span.modal-feedback__alert-msg.scale-alert-out Форма успешно отправлена

@@ -1,0 +1,26 @@
+extends ~@/views/layouts/main/main
+
+block title
+  title
+
+block content
+
+  include ./_imports/import
+
+  - const data = require('./data.json')
+
+
+  #ab-consult-pg
+    .dark-bg.fade-out
+
+    +modal-feedback('ab-consult-pg')
+
+    +header('ab-consult-pg')
+
+    +section-1('ab-consult-pg')
+
+    +section-2('ab-consult-pg')
+
+    +section-3('ab-consult-pg')
+
+    +section-4('ab-consult-pg')

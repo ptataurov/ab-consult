@@ -1,0 +1,119 @@
+#ab-consult-pg {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    background: url(./img/bg-bubbles.svg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .header__logo {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  .header__title {
+    margin-bottom: 15px;
+    color: $titleColor;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .header__subtitle {
+    margin-bottom: 30px;
+    color: $titleColor;
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Iriska', sans-serif;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .header__text {
+    max-width: 700px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  .header__btn {
+    margin-bottom: 30px;
+    padding: 15px 86px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    background-color: #e53654;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: darken($color: #e53654, $amount: 10);
+    }
+  }
+
+  .header__rocket-img {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  // Media queries
+
+  @include less-xl {
+  }
+
+  @include less-lg {
+  }
+
+  @include less-md {
+  }
+
+  @include less-sm {
+    .header {
+      align-items: flex-start;
+    }
+
+    .header__logo {
+      width: 200px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .header__title {
+      margin-bottom: 20px;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .header__subtitle {
+      margin-bottom: 20px;
+      font-size: 40px;
+      line-height: 32px;
+      text-align: left;
+    }
+
+    .header__text {
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    .header__btn {
+      width: 100%;
+      padding: 15px 0;
+    }
+  }
+
+  // Mixes
+}

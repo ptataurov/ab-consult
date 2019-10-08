@@ -1,0 +1,58 @@
+mixin section-3(mixes)
+  include ./_imports/import
+
+  .section-3(class=(mixes) && `${mixes}__section-3`)
+    h3.section-3__title Будь в курсе, управляй, планируй
+
+    p.section-3__subtitle Наши инструменты позволят вам быстро и эффективно следить и работать с репутацией компании, а также прогнозировать продажи и разрабатывать оптимальную стратегию ведения бизнеса.
+
+    .section-3__tabs
+        -
+          const tabs = [
+            {
+              label: 'Удобный дашборд',
+              img: require('../../components/section-3/img/tab-1.jpg'),
+              text: 'Основные данные о бренде во всем интернете на одной странице'
+            },
+            {
+              label: 'Мониторинг в реальном времени',
+              img: require('../../components/section-3/img/tab-2.jpg'),
+              text: 'Отзывы пользователей со всех популярных коммерческих площадок в режиме онлайн'
+            },
+            {
+              label: 'Анализ конкурентов',
+              img: require('../../components/section-3/img/tab-3.jpg'),
+              text: 'Самая полная информация о ваших конкурентах'
+            },
+            {
+              label: 'Цена',
+              img: require('../../components/section-3/img/tab-4.jpg'),
+              text: 'Планируйте продажи или охват имиджевых рекламных кампаний'
+            },
+            {
+              label: 'Популярность',
+              img: require('../../components/section-3/img/tab-5.jpg'),
+              text: 'Экономьте на исследованиях узнаваемости бренда и получайте самую точную статистику популярности бренда в сравнении с конкурентами'
+            },
+            {
+              label: 'Представленность',
+              img: require('../../components/section-3/img/tab-6.jpg'),
+              text: 'Наращивайте свою долю рынка'
+            },
+          ]
+        
+        nav.section-3__tabs-nav
+          .section-3__tabs-nav-container
+            each tab, idx in tabs
+              button.section-3__tab(data-target=`${idx}` class=(idx === 0 && 'section-3__tab--active'))= tab.label
+          
+        .section-3__tab-content
+          .section-3__img-container
+            each tab, idx in tabs
+              img.section-3__img(class=(idx === 0 ? 'section-3__img--show scale-in' : 'scale-out') src=`${tab.img}` alt='Интерфейс AboutBrand')
+
+          .section-3__tab-text-container
+            span.section-3__tab-text-pointer
+            each tab, idx in tabs
+              p.section-3__tab-text(class=(idx === 0 ? 'section-3__tab-text--show scale-in' : 'scale-out'))= tab.text
+            
