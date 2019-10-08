@@ -54,9 +54,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
         timeoutToggleClass(formAlert, 'modal-feedback__alert-msg--show')
 
-        try {
+        try {            
             const response = await fetch(
-                require('../../../public/json/response.json')
+                '/consalt/ajax/form/', {
+                    method: 'POST',
+                    mode: 'cors',
+                    cache: 'no-cache',
+                    credentials: 'same-origin',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+                    },
+                    body: JSON.stringify(Object.fromEntries(new FormData(form)))
+                }
             )
 
             const { errorMsg } = await response.json()
