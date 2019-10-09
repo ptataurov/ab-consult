@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         try {            
             const response = await fetch(
-                '/consalt/ajax/form/', {
+                '/consult/ajax/form/', {
                     method: 'POST',
                     mode: 'cors',
                     cache: 'no-cache',
@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 timeoutToggleClass(
                     formAlert,
-                    'section-4__input-alert--show',
+                    'modal-feedback__alert--show',
                     errorMsg
                 )
             } else {

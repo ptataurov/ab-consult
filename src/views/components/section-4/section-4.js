@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         try {
             const response = await fetch(
-                '/consalt/ajax/form/', {
+                '/consult/ajax/form/', {
                     method: 'POST',
                     mode: 'cors',
                     cache: 'no-cache',
