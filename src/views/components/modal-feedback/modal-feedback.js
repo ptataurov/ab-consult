@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 timeoutToggleClass(
                     formAlert,
-                    'modal-feedback__alert--show',
+                    'modal-feedback__alert-msg--show',
                     errorMsg
                 )
             } else {
