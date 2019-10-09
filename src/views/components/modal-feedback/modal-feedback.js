@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async event => {
         event.preventDefault()
 
-        timeoutToggleClass(formAlert, 'modal-feedback__alert-msg--show')
+        //timeoutToggleClass(formAlert, 'modal-feedback__alert-msg--show')
 
         try {            
             const response = await fetch(

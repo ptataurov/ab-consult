@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async event => {
         event.preventDefault()
 
-        timeoutToggleClass(formAlert, 'section-4__input-alert--show')
+        //timeoutToggleClass(formAlert, 'section-4__input-alert--show')
 
         try {
             const response = await fetch(
