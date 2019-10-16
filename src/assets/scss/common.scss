@@ -5,81 +5,114 @@
 @import 'reset';
 
 .dark-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  width: 100vw;
-  min-width: 320px;
-  height: 100vh;
-  background-color: rgba(#000, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	width: 100vw;
+	min-width: 320px;
+	height: 100vh;
+	background-color: rgba(#000, 0.5);
 
-  &--show {
-    display: block;
-  }
+	&--show {
+		display: block;
+	}
 }
 
 .scale-in {
-  animation: scaleIn 200ms;
-  animation-fill-mode: forwards;
+	animation: scaleIn 200ms;
+	animation-fill-mode: forwards;
 }
 
 .scale-out {
-  animation: scaleOut 200ms;
-  animation-fill-mode: forwards;
+	animation: scaleOut 200ms;
+	animation-fill-mode: forwards;
 }
 
 @keyframes scaleIn {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
 
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 @keyframes scaleOut {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
+	from {
+		transform: scale(1);
+		opacity: 1;
+	}
 
-  to {
-    transform: scale(0);
-    opacity: 0;
-  }
+	to {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+
+.fade-in-left {
+	animation: fadeInLeft 200ms;
+	animation-fill-mode: forwards;
+}
+
+.fade-out-left {
+	animation: fadeOutLeft 200ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInLeft {
+	from {
+		transform: translate3d(-100%, 0, 0);
+		opacity: 0;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutLeft {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		transform: translate3d(-100%, 0, 0);
+		opacity: 0;
+	}
 }
 
 .fade-in {
-  animation: fadeIn 200ms;
-  animation-fill-mode: forwards;
+	animation: fadeIn 200ms;
+	animation-fill-mode: forwards;
 }
 
 .fade-out {
-  animation: fadeOut 200ms;
-  animation-fill-mode: forwards;
+	animation: fadeOut 200ms;
+	animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+	from {
+		opacity: 0;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
+	from {
+		opacity: 1;
+	}
 
-  to {
-    opacity: 0;
-  }
+	to {
+		opacity: 0;
+	}
 }

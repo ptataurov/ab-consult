@@ -49,7 +49,7 @@ mixin section-3(mixes)
         .section-3__tab-content
           .section-3__img-container
             each tab, idx in tabs
-              img.section-3__img(class=(idx === 0 ? 'section-3__img--show scale-in' : 'scale-out') src=`${tab.img}` alt='Интерфейс AboutBrand')
+              img.section-3__img(class=(idx === 0 ? 'section-3__img--show fade-in-left' : 'fade-out-left') src=`${tab.img}` alt='Интерфейс AboutBrand')
 
           .section-3__tab-text-container
             span.section-3__tab-text-pointer
