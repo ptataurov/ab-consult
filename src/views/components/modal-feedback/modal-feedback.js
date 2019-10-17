@@ -8,7 +8,7 @@ import {
 	hide as fadeHide
 } from '../../../assets/js/fadeFuncs'
 
-const isTest = false
+const isTest = true
 
 window.addEventListener('DOMContentLoaded', () => {
 	const darkBg = document.querySelector('.dark-bg')
